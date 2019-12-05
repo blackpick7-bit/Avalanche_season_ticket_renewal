@@ -8,7 +8,7 @@ Photo from [milehighhockey.com](https://www.milehighhockey.com/2013/7/11/4514554
 - The purpose of this project is to create a classification model to predict whether a current Avalanche season ticket holder will renew for next season. I will measure success of the model against the baseline (majority class) of 79.5%. I aim to give Kroenke Sports & Entertainment insights into which factors contribute the most to season ticket renewal, as well as offer a predictive model to help them better market to these valuable customers.
 
 # Background research:
-- Season ticket holder offer a unique source of revenue for sports teams. They offer an enormous upfront investment to the company. While they do not account for many of the customers, they do offer immense value. These customers tend to stay loyal, as long as they feel like they are getting a return on investment. These customers are more loyal to their brand than customers in other industries. Maintaining these assets, and obtaining more should be a major focus.
+- Season ticket holders offer a unique source of revenue for sports teams. They offer an enormous upfront investment to the company. While they do not account for many of the customers, they do offer immense value. These customers tend to stay loyal, as long as they feel like they are getting a return on investment. These customers are more loyal to their brand than customers in other industries. Maintaining these assets, and obtaining more should be a major focus.
 
        
 # Data Dictionary:
