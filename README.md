@@ -5,9 +5,10 @@ Photo from [milehighhockey.com](https://www.milehighhockey.com/2013/7/11/4514554
 ### Authored by: Jeff Thomas
 
 # Problem Statement:
-- The purpose of this project is to create a classification model to predict whether a current Avalanche season ticket holder will renew for next season. I will measure success of the model against the baseline (majority class).
+- The purpose of this project is to create a classification model to predict whether a current Avalanche season ticket holder will renew for next season. I will measure success of the model against the baseline (majority class) of 79.5%. I aim to give Kroenke Sports & Entertainment insights into which factors contribute the most to season ticket renewal, as well as offer a predictive model to help them better market to these valuable customers.
 
 # Background research:
+- Season ticket holder offer a unique source of revenue for sports teams. They offer an enormous upfront investment to the company. While they do not account for many of the customers, they do offer immense value. These customers tend to stay loyal, as long as they feel like they are getting a return on investment. These customers are more loyal to their brand than customers in other industries. Maintaining these assets, and obtaining more should be a major focus.
 
        
 # Data Dictionary:
@@ -40,7 +41,9 @@ Photo from [milehighhockey.com](https://www.milehighhockey.com/2013/7/11/4514554
 # Repository Structure:
 > Included in this repository:
 - Jupyter Notebooks
-    - Cleaning and EDA
+    - Season 5 cleaning
+    - All seasons cleaning
+    - EDA
     - Multiple Models
 - data
     - csv with all posts
@@ -49,14 +52,30 @@ Photo from [milehighhockey.com](https://www.milehighhockey.com/2013/7/11/4514554
 - presentation slides
 
 # Executive Summary:
-- 
+- Data was obtained by Kroenke Sports & entertainment
+- Raw data that was given was all tickets held by season ticket holders for seasons '14-'15,'15-'16,'16-'17,'17-'18,'18-'19. I began by aggregating all ticket data held by each contact for season '14-'15. I then created functions based on these methods to handle all seasons.
+- Next I included season performance from [www.hockey-reference.com](www.hockey-reference.com) for each season. This included total points, wins, and overtime losses.
+- I also included some additional contact info obtained from Kroenke, such as: percent of total tickets used, tenure, flash profit, and renewal for season '18-'19. This data was not attainable from the initial datasets.
+- I then moved on to exploratory data analysis, looking at correlations and trends.
+- Finally I created a few statistical models
+       - Logistic Regression
+       - Random Forest
+       - Voting Classifier
+              - Random Forest
+              - Gradient Boost
+              - ADABoost
+              - Descision Tree
+       - Neural Network
+- I modeled using a training set of the first four seasons, testing on season '18-'19. This was my main method of modeling, as it is the most applicable, allowing Kroenke to predict next seasons renewals. These models performed at around 80-90% accuracy.
+- I also tried modeling with randomly selected training and testing sets. These models performed significantly better (up to 98% accurate). However, these offered less value to the stake-holders.
 
 # Findings/Conclusions:
-- My RMSE baseline score was 0.0060.
-- My best performing model gave me about 0.0033.
-- Year and CPI were the most highly correlated features
-- When using year alone as a feature, I achieved about half the test score of all features combined
+- My majority class baseline score was about 79.5%.
+- My best performing model gave me about 90% accuracy (when predicting next season).
+- I was able to predict more accurately when randomly assigning testing and training sets.
+- Some of the most important factors to season ticket renewal were: team performance, tenure, years holding season tickets, and distance from the Pepsi Center 
 
 # Recommendations/Further Steps:
-- In further iterations of this project, I would like to spend more time aquiring more data. I would like to have features such as tax rates, average income, average savings, interest rates, etc.
-- I would also like to take some time to perform an A/B test to see if my findings are significant.
+- In further iterations of this project, I would like to have access to more demographic data for the customers. I would also like to include weather data, and revenue/pricing information. Also, more data from other seasons would help as well.
+- I would recommend focusing on finding ways to decrease the burden of commuting to the Pepsi Center. I would also find ways to attract new season ticket holders, as they tend to stay loyal. Obviously the performance of the team is a more complicated matter, but it remains of the utmost importance.
+
