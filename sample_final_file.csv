@@ -1,5 +1,0 @@
-season_year,contact_id,renewed,upgrade,account_type,Gender,zip,distance,number_of_tix,seat_start,seat_end,section,row,pricecode_desc,aisle,general_location,priceleveldesc,multiple_locations,tenure,percent_total_used,rep_name,age,income_estimated_household,education,number_of_children,paid_in_full,percent_personally_used,price_increase,season_performance,dual_accounts
-2014-2015,100093,1,0,Company,Male,80204,1.243302994,6,1,2,142,2,Full Renewal,1,Lower,Rinkside II (Rows 2-8),No,19,0.918604651,None,52,6,2,0,0,0.918604651,0,0.549,0
-2015-2016,100093,1,0,Company,Male,80204,1.243302994,6,1,2,142,1,Full Renewal,1,Lower,Rinkside (Row 1),No,20,0.903100775,None,50,6,2,0,0,0.903100775,1,0.5,0
-2016-2017,100093,1,0,Company,Male,80204,1.243302994,6,1,2,142,5,Full Renewal,1,Lower,AT2 Rinkside (2-7) #,No,21,0.852272727,None,50,6,2,0,0,0.852272727,0,0.293,0
-2017-2018,100093,1,0,Company,Male,80204,1.243302994,4,1,4,142,3,Playoff Strip STM,1,Lower,AT2 Rinkside (2-7) #,No,22,0.864130435,None,49,6,2,0,0,0.864130435,0,0.579,0
